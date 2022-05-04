@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/desktop.css">
+    <link rel="stylesheet" href="src/css/mobile.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/528/528101.png">
     <title>Pokédex</title>
 </head>
@@ -28,12 +29,6 @@
                     <figcaption>HOME</figcaption>
                 </figure>
             </a>
-            <a href="#" class="about">
-                <figure>
-                    <img src="src/images/about.svg" alt="Ícone sobre o site" title="Sobre o site"/>
-                    <figcaption>ABOUT</figcaption>
-                </figure>
-            </a>
             <a href="#" class="favorites">
                 <figure>
                     <img src="src/images/heart.svg" alt="Ícone para ir para os favoritos" title="Favoritos"/>
@@ -44,19 +39,29 @@
     </header>
     <main>
         <div class="search">
-            <a href="#"><div class="circle-search"></div></a>
-            <input type="text" id="search-poke">
             <img src="src/images/plus.svg" alt="Imagem plus">
+            <input type="text" id="search-poke">
+            <a href="#"><div class="circle-search"></div></a>
         </div>
             <ul class="list-tips">
-                <li class="tips">ÁGUA</li>
-                <li class="tips">FOGO</li>
-                <li class="tips">INSETO</li>
-                <li class="tips">NORMAL</li>
-                <li class="tips">PLANTA</li>
-                <li class="tips">VENENOSO</li>
-                <li class="tips">VOADOR</li>
-                <li class="tips">VER TODOS</li>
+                <li class="tips tips-grass" >all</li>
+                <li class="tips tips-grass" >grass</li>
+                <li class="tips tips-fire" >fire</li>
+                <li class="tips tips-water" >water</li>
+                <li class="tips tips-bug" >bug</li>
+                <li class="tips tips-normal" >normal</li>
+                <li class="tips tips-poison" >poison</li>
+                <li class="tips tips-electric" >electric</li>
+                <li class="tips tips-ground" >ground</li>
+                <li class="tips tips-fairy" >fairy</li>
+                <li class="tips tips-fighting" >fighting</li>
+                <li class="tips tips-psychic" >psychic</li>
+                <li class="tips tips-rock" >rock</li>
+                <li class="tips tips-ghost" >ghost</li>
+                <li class="tips tips-ice" >ice</li>
+                <li class="tips tips-dragon" >dragon</li>
+                <li class="tips tips-dark" >dark</li>
+                <li class="tips tips-steel" >steel</li>
             </ul>
         <section id="cards">
         </section>

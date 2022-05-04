@@ -1,0 +1,34 @@
+@media screen and (max-width:640px) {
+    .title {
+        font-size: 30px;
+    }
+    .circles {
+        gap:10px
+    }
+    .circle-blue {
+        width: 30px;
+        height: 30px;
+    }
+    .circle-red, .circle-yellow, .circle-green {
+        width: 10px;
+        height: 10px;
+    }
+    nav {
+        font-size: 12px;
+        gap:10px;
+    }
+    nav img {
+        width: 30px;
+    }
+    .search input {
+        width: 250px;
+        padding: 10px;
+    }
+    .search a, .search img {
+        width: 40px;
+    }
+    .list-tips {
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+}
