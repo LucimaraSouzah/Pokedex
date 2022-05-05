@@ -23,13 +23,13 @@
         </div>
         <h1 class="title">Pokédex</h1>
         <nav>
-            <a href="#" class="home">
+            <a href="index.html" class="home">
                 <figure>
                     <img src="src/images/house.svg" alt="Ícone da página inicial" title="Página inicial"/>
                     <figcaption>HOME</figcaption>
                 </figure>
             </a>
-            <a href="#" class="favorites">
+            <a href="#" onclick="RenderByObjects(Pokemon.FavoritesObj)" class="favorites">
                 <figure>
                     <img src="src/images/heart.svg" alt="Ícone para ir para os favoritos" title="Favoritos"/>
                     <figcaption>LIKED</figcaption>
@@ -40,28 +40,28 @@
     <main>
         <div class="search">
             <img src="src/images/plus.svg" alt="Imagem plus">
-            <input type="text" id="search-poke">
+            <input onkeyup="PokemonSearch(this.value)"type="text" id="search-poke">
             <a href="#"><div class="circle-search"></div></a>
         </div>
             <ul class="list-tips">
-                <li class="tips tips-grass" >all</li>
-                <li class="tips tips-grass" >grass</li>
-                <li class="tips tips-fire" >fire</li>
-                <li class="tips tips-water" >water</li>
-                <li class="tips tips-bug" >bug</li>
-                <li class="tips tips-normal" >normal</li>
-                <li class="tips tips-poison" >poison</li>
-                <li class="tips tips-electric" >electric</li>
-                <li class="tips tips-ground" >ground</li>
-                <li class="tips tips-fairy" >fairy</li>
-                <li class="tips tips-fighting" >fighting</li>
-                <li class="tips tips-psychic" >psychic</li>
-                <li class="tips tips-rock" >rock</li>
-                <li class="tips tips-ghost" >ghost</li>
-                <li class="tips tips-ice" >ice</li>
-                <li class="tips tips-dragon" >dragon</li>
-                <li class="tips tips-dark" >dark</li>
-                <li class="tips tips-steel" >steel</li>
+                <a href="index.html"><li class="tips tips-grass" >all</li></a>
+                <li onclick="RenderByCategory('grass')" class="tips tips-grass" >grass</li>
+                <li onclick="RenderByCategory('fire')" class="tips tips-fire" >fire</li>
+                <li onclick="RenderByCategory('water')" class="tips tips-water" >water</li>
+                <li onclick="RenderByCategory('bug')" class="tips tips-bug" >bug</li>
+                <li onclick="RenderByCategory('normal')" class="tips tips-normal" >normal</li>
+                <li onclick="RenderByCategory('poison')" class="tips tips-poison" >poison</li>
+                <li onclick="RenderByCategory('electric')" class="tips tips-electric" >electric</li>
+                <li onclick="RenderByCategory('ground')" class="tips tips-ground" >ground</li>
+                <li onclick="RenderByCategory('fairy')" class="tips tips-fairy" >fairy</li>
+                <li onclick="RenderByCategory('fighting')" class="tips tips-fighting" >fighting</li>
+                <li onclick="RenderByCategory('psychic')" class="tips tips-psychic" >psychic</li>
+                <li onclick="RenderByCategory('rock')" class="tips tips-rock" >rock</li>
+                <li onclick="RenderByCategory('ghost')" class="tips tips-ghost" >ghost</li>
+                <li onclick="RenderByCategory('ice')" class="tips tips-ice" >ice</li>
+                <li onclick="RenderByCategory('dragon')" class="tips tips-dragon" >dragon</li>
+                <li onclick="RenderByCategory('dark')" class="tips tips-dark" >dark</li>
+                <li onclick="RenderByCategory('steel')" class="tips tips-steel" >steel</li>
             </ul>
         <section id="cards">
         </section>
