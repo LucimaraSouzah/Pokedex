@@ -1,0 +1,168 @@
+@import 'colors.css';
+
+/* modal */
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #00000055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-scroll{overflow: auto;}
+
+.modal-off{display: none;}
+.modal-on{display: flex;}
+
+.modal-in::-webkit-scrollbar{width: 20px;}
+
+.modal-in{
+    width: 400px;
+    height: 550px;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px #00000055;
+}
+
+.modal-body{
+    padding:20px;
+}
+
+/* part 2 */
+
+.modal .ball{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 20px;
+    margin: auto;
+    z-index: 2;
+    opacity: 0.5;
+}
+.modal .modal_img{
+    height: 200px;
+    max-height:100%; 
+    z-index: 10;
+    position: relative;
+}
+
+
+/* modal */
+
+#modalConteudo {
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal_name {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#modal_type {
+    border-radius: 20px;
+    width: max-content;
+    padding: 7px 20px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#modalDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#modalDetails p {
+    display: flex;
+    flex-direction: column;
+    color: var(--gray-3);
+}
+
+#modalDetails span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#modalStatus {
+    display: flex;
+    flex-direction: column;
+}
+
+#modalStatus h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modalStatusBody {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalStatus span {
+    margin-right: 5px;
+}
+
+.modalStatusInfo { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.progressBar {
+    display: inline-block;
+    height: 15px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: var(--gray-1);
+    overflow: hidden;
+}
+
+.progress {
+    width: 50%;
+    max-width: 100%;
+    color: var(--gray-1);
+    font-size: 12px;
+    background-color: var(--red-1);
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.progress::after{
+    content: "200";
+    position: absolute;
+    left: 105%;
+    color: black;
+}
+
+.progress span{color: white;}
+.progress-hp{background-color: var(--red-1);}
+.progress-atk{background-color: var(--blue-1);}
+.progress-def{background-color: var(--green-1);}
+.progress-satk{background-color: var(--tips-fighting);}
+.progress-sdef{background-color: var(--tips-ghost);}
+.progress-speed{background-color: var(--tips-psychic);}

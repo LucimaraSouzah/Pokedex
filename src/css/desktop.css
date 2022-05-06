@@ -1,3 +1,7 @@
+@import url("../components/modal.css");
+@import url("../components/colors.css");
+@import url("../components/cards.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Plus+Jakarta+Sans:ital,wght@0,400;1,200&display=swap');
 
 * {
@@ -5,65 +9,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-:root{
-    --red-1              : #DB092C;
-    --red-2              : #A60620;
-    --yellow-1           : #f5da2d;
-    --yellow-2           : #a28c11;
-    --green-1-focus      : #41914d;
-    --green-1            : #4fae5d;
-    --green-2            : #002e2a;
-    --blue-1             : #28abfd;
-    --blue-2             : #176a9f;
-    --gray-1             : #e0e0e0;
-    --gray-2             : #707070;
-    --gray-3             : #222222;
-    --tips-all           : #6C757D;
-    --tips-all-hover     : #34393e;
-    --tips-grass         : #83c765;
-    --tips-grass-hover   : #5c9643;
-    --tips-fire          : #ec514a;
-    --tips-fire-hover    : #b33630;
-    --tips-water         : #4fa6f9;
-    --tips-water-hover   : #3274b1;
-    --tips-bug           : #b7c551;
-    --tips-bug-hover     : #8e993a;
-    --tips-normal        : #b3b2aa;
-    --tips-normal-hover  : #8b8a83;
-    --tips-poison        : #b97fc9;
-    --tips-poison-hover  : #8b5998;
-    --tips-electric      : #f3d55f;
-    --tips-electric-hover: #c6ad49;
-    --tips-ground        : #dcbf67;
-    --tips-ground-hover  : #c2a945;
-    --tips-fairy         : #fdb9e9;
-    --tips-fairy-hover   : #d28dbd;
-    --tips-fighting      : #d56723;
-    --tips-fighting-hover: #b6581e;
-    --tips-psychic       : #ea61a2;
-    --tips-psychic-hover : #c54f86;
-    --tips-rock          : #c0b176;
-    --tips-rock-hover    : #9d905d;
-    --tips-ghost         : #7774c2;
-    --tips-ghost-hover   : #5f5da9;
-    --tips-ice           : #88dffb;
-    --tips-ice-hover     : #66b6d1;
-    --tips-dragon        : #f16e57;
-    --tips-dragon-hover  : #c8533f;
-    --tips-dark          : #707070;
-    --tips-dark-hover    : #3e3d3d;
-    --tips-steel         : #9eb7b8;
-    --tips-steel-hover   : #798e8f;
-    --font-title :'Comfortaa', cursive;
-    --font-text  :'Plus Jakarta Sans', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     width: 100%;
     height: 100vh;
-    background-color: var(--gray-1);
 }
 
 /* HEADER */
@@ -72,7 +23,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    padding: 15px 10px 20px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--red-2);
+}
+
+.btn{
+    padding:4px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-red-outlined{ border: solid 1px var(--red-1); color: var(--red-1); }
+.btn-red-outlined:hover{ background-color: var(--red-1); color: white; cursor: pointer; }
+
+.btn-red{
+    background-color: var(--red-1);
+    color: white;
 }
 
 .circles {
@@ -104,9 +71,11 @@ header {
 .circle-yellow {background-image: radial-gradient(circle, #f5da2d, #e5cb28, #d5bc22, #c6ad1d, #b69f18, #b19b1b, #ac961e, #a79220, #aa9629, #ae9a32, #b19f39, #b5a341);}
 .circle-green {background-image: radial-gradient(circle, #4fae5d, #32955a, #187c54, #03644a, #004c3e, #004137, #003730, #012d29, #022c28, #032b27, #042a26, #052925);}
 
+
 .title {
     font-size: 52px;
     font-family: var(--font-title);
+    color: white;
 }
 
 nav {
@@ -124,7 +93,7 @@ nav img {
 }
 
 figure figcaption {
-    color: var(--gray-3);
+    color: var(--gray-1);
 }
 
 /* CONTEÚDO PRINCIPAL */
@@ -142,28 +111,23 @@ main {
 }
 
 .search a  {
-    width: 60px;
-    height: auto;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color:var(--green-2);
     border: 2px solid var(--gray-3);
 }
 
 .search input {
-    width: 500px;
-    padding: 20px;
+    width: 450px;
+    padding: 10px 20px;
     border-radius: 20px;
-    border: 1px solid var(--gray-3);
     background-color: var(--green-1);
     font-size: 18px;
-}
-
-.search input:focus {
-    background-color: var(--green-1-focus);
-}
-
-.search img {
-    width: 60px;
+    color: #fff;
+    outline: none;
+    border: none;
+    transition: 0.2s
 }
 
 .list-tips {
@@ -177,54 +141,18 @@ main {
 }
 
 .tips {
-    padding: 8px;
-    border-radius: 10px;
-    color: var(--gray-1);
+    padding: 8px 15px;
     text-transform: uppercase;
     cursor: pointer;
-    color: var(--gray-3);
+    border-radius: 0.5em;
+    min-width: 120px;
+    text-align: center;
+    color: #000;
 }
 
 .tips:hover {
-    color: var(--gray-1);
+    color: #fff;
 }
-
-.tips:nth-child(1)        {background-color: var(--tips-all);}
-.tips:nth-child(1):hover  {background-color: var(--tips-all-hover);}
-.tips:nth-child(2)        {background-color: var(--tips-grass);}
-.tips:nth-child(2):hover  {background-color: var(--tips-grass-hover);}
-.tips:nth-child(3)        {background-color: var(--tips-fire);}
-.tips:nth-child(3):hover  {background-color: var(--tips-fire-hover);}
-.tips:nth-child(4)        {background-color: var(--tips-water);}
-.tips:nth-child(4):hover  {background-color: var(--tips-water-hover);}
-.tips:nth-child(5)        {background-color: var(--tips-bug)}
-.tips:nth-child(5):hover  {background-color: var(--tips-bug-hover)}
-.tips:nth-child(6)        {background-color: var(--tips-normal);}
-.tips:nth-child(6):hover  {background-color: var(--tips-normal-hover);}
-.tips:nth-child(7)        {background-color: var(--tips-poison);}
-.tips:nth-child(7):hover  {background-color: var(--tips-poison-hover);}
-.tips:nth-child(8)        {background-color: var(--tips-electric);}
-.tips:nth-child(8):hover  {background-color: var(--tips-electric-hover);}
-.tips:nth-child(9)        {background-color: var(--tips-ground);}
-.tips:nth-child(9):hover  {background-color: var(--tips-ground-hover);}
-.tips:nth-child(10)       {background-color: var(--tips-fairy);}
-.tips:nth-child(10):hover {background-color: var(--tips-fairy-hover);}
-.tips:nth-child(11)       {background-color: var(--tips-fighting);}
-.tips:nth-child(11):hover {background-color: var(--tips-fighting-hover);}
-.tips:nth-child(12)       {background-color: var(--tips-psychic);}
-.tips:nth-child(12):hover {background-color: var(--tips-psychic-hover);}
-.tips:nth-child(13)       {background-color: var(--tips-rock);}
-.tips:nth-child(13):hover {background-color: var(--tips-rock-hover);}
-.tips:nth-child(14)       {background-color: var(--tips-ghost);}
-.tips:nth-child(14):hover {background-color: var(--tips-ghost-hover);}
-.tips:nth-child(15)       {background-color: var(--tips-ice);}
-.tips:nth-child(15):hover {background-color: var(--tips-ice-hover);}
-.tips:nth-child(16)       {background-color: var(--tips-dragon);}
-.tips:nth-child(16):hover {background-color: var(--tips-dragon-hover);}
-.tips:nth-child(17)       {background-color: var(--tips-dark);}
-.tips:nth-child(17):hover {background-color: var(--tips-dark-hover);}
-.tips:nth-child(18)       {background-color: var(--tips-steel);}
-.tips:nth-child(18):hover {background-color: var(--tips-steel-hover);}
 
 section {
     display: flex;
@@ -232,68 +160,20 @@ section {
     align-items: center;
     flex-wrap: wrap;
     background-color:#DB092C;
-    border: 3px solid var(--gray-3);
-    box-shadow: 2px 2px 2px var(--gray-3);
+    background-color:var(--gray-1);
     width: 90%;
     margin: 20px 0px 20px 0px;
     padding-bottom: 20px;
     border-radius: 20px;
 }
 
-.card {
+.circle-search{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 20px 20px 0px 0px;
-    gap: 10px;
-    border-radius: 10px;
-    background-color:var(--gray-1);
-    background-color: #ffffff;
-    text-align: center;
-    overflow: hidden;
-    width: 200px;
-    padding: 10px;
-    text-transform: capitalize;
-    text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: 0.5s;
+    background-color: var(--green-2);
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
 }
-
-.card:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: 0.5s;
-    z-index: 2;
-}
-
-.card-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.card img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-.card .icon {
-    width: 30px;
-    opacity: 0.4;
-}
-
-.card .icon-active{opacity: 1;}
-
-.card-info {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-info img{
-    height: 20px;
-    width: 20px;
-}
+.icon{ width: 60%; height: 60%;  }

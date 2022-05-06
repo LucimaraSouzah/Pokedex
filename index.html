@@ -26,48 +26,95 @@
             <a href="index.html" class="home">
                 <figure>
                     <img src="src/images/house.svg" alt="Ícone da página inicial" title="Página inicial"/>
-                    <figcaption>HOME</figcaption>
                 </figure>
             </a>
             <a href="#" onclick="RenderByObjects(Pokemon.FavoritesObj)" class="favorites">
                 <figure>
-                    <img src="src/images/heart.svg" alt="Ícone para ir para os favoritos" title="Favoritos"/>
-                    <figcaption>LIKED</figcaption>
+                    <img src="src/images/heart2.svg" alt="Ícone para ir para os favoritos" title="Favoritos"/>
                 </figure> 
             </a>
         </nav>
     </header>
     <main>
         <div class="search">
-            <img src="src/images/plus.svg" alt="Imagem plus">
+            <img width="50px" src="src/images/plus.svg" alt="Imagem plus">
             <input onkeyup="PokemonSearch(this.value)"type="text" id="search-poke">
-            <a href="#"><div class="circle-search"></div></a>
+            <div class="circle-search"></div>
         </div>
             <ul class="list-tips">
-                <a href="index.html"><li class="tips tips-grass" >all</li></a>
-                <li onclick="RenderByCategory('grass')" class="tips tips-grass" >grass</li>
-                <li onclick="RenderByCategory('fire')" class="tips tips-fire" >fire</li>
-                <li onclick="RenderByCategory('water')" class="tips tips-water" >water</li>
-                <li onclick="RenderByCategory('bug')" class="tips tips-bug" >bug</li>
+                <a href="index.html"><li class="tips tips-all" >Todos</li></a>
+                <li onclick="RenderByCategory('grass')" class="tips tips-grass" >selva</li>
+                <li onclick="RenderByCategory('fire')" class="tips tips-fire" >fogo</li>
+                <li onclick="RenderByCategory('water')" class="tips tips-water" >água</li>
+                <li onclick="RenderByCategory('bug')" class="tips tips-bug" >inseto</li>
                 <li onclick="RenderByCategory('normal')" class="tips tips-normal" >normal</li>
-                <li onclick="RenderByCategory('poison')" class="tips tips-poison" >poison</li>
-                <li onclick="RenderByCategory('electric')" class="tips tips-electric" >electric</li>
-                <li onclick="RenderByCategory('ground')" class="tips tips-ground" >ground</li>
-                <li onclick="RenderByCategory('fairy')" class="tips tips-fairy" >fairy</li>
-                <li onclick="RenderByCategory('fighting')" class="tips tips-fighting" >fighting</li>
-                <li onclick="RenderByCategory('psychic')" class="tips tips-psychic" >psychic</li>
-                <li onclick="RenderByCategory('rock')" class="tips tips-rock" >rock</li>
-                <li onclick="RenderByCategory('ghost')" class="tips tips-ghost" >ghost</li>
-                <li onclick="RenderByCategory('ice')" class="tips tips-ice" >ice</li>
-                <li onclick="RenderByCategory('dragon')" class="tips tips-dragon" >dragon</li>
-                <li onclick="RenderByCategory('dark')" class="tips tips-dark" >dark</li>
-                <li onclick="RenderByCategory('steel')" class="tips tips-steel" >steel</li>
+                <li onclick="RenderByCategory('poison')" class="tips tips-poison" >venenoso</li>
+                <li onclick="RenderByCategory('electric')"class="tips tips-electric" >elétrico</li>
+                <li onclick="RenderByCategory('ground')" class="tips tips-ground" >terra</li>
+                <li onclick="RenderByCategory('fairy')" class="tips tips-fairy" >mágico</li>
+                <li onclick="RenderByCategory('fighting')"class="tips tips-fighting" >lutador</li>
+                <li onclick="RenderByCategory('psychic')" class="tips tips-psychic" >psiquico</li>
+                <li onclick="RenderByCategory('rock')" class="tips tips-rock" >pedra</li>
+                <li onclick="RenderByCategory('ghost')" class="tips tips-ghost" >fantasma</li>
+                <li onclick="RenderByCategory('ice')" class="tips tips-ice" >gelo</li>
+                <li onclick="RenderByCategory('dragon')" class="tips tips-dragon" >dragão</li>
+                <li onclick="RenderByCategory('dark')" class="tips tips-dark" >obscuro</li>
+                <li onclick="RenderByCategory('steel')" class="tips tips-steel" >ferro</li>
+                <li onclick="RenderByCategory('flying')" class="tips tips-flying">voador</li>
             </ul>
         <section id="cards">
         </section>
     </main>
     <footer>
     </footer>
+
+    <div class="modal modal-effects modal-off" id="div_modal">
+        <div class="modal-in modal-body " style="overflow-y: scroll;">
+            <div style="text-align: center;">
+                <div class="ball" id="ball"></div>
+                <img style="position: relative; z-index: 2" id="modal_img" height="200px" src="">
+            </div>
+            <div id="modalConteudo">
+                <span id="modal_name"></span>
+                <span id="modal_type"></span>
+            </div>
+            <div id="modalDetails">
+                <p>Peso <span id="modal_weight"></span></p>
+                <p>Altura <span id="modal_height"></span></p>
+            </div>
+
+            <div id="modalStatus">
+                <h4>Status</h4>
+                <div class="modalStatusBody" >
+                    <div class="modalStatusInfo">
+                        <p>Hp</p>
+                        <div class="progressBar"><div class="progress progress-hp" id="progress_hp"><span id="modal_hp"></span></div></div>
+                    </div>
+                    <div class="modalStatusInfo">
+                        <p>Atk</p>
+                        <div class="progressBar"><div class="progress progress-atk" id="progress_atk"><span id="modal_atk"></span></div></div>
+                    </div>
+                    <div class="modalStatusInfo">
+                        <p>Def</p>
+                        <div class="progressBar"><div class="progress progress-def" id="progress_def"><span id="modal_def"></span></div></div>
+                    </div>
+                    <div class="modalStatusInfo">
+                        <p>Atk especial</p>
+                        <div class="progressBar"><div class="progress progress-satk" id="progress_satk"><span id="modal_satk"></span></div></div>
+                    </div>
+                    <div class="modalStatusInfo">
+                        <p>Def especial</p>
+                        <div class="progressBar"><div class="progress progress-sdef" id="progress_sdef"><span id="modal_sdef"></span></div></div>
+                    </div>
+                    <div class="modalStatusInfo">
+                        <p>Velocidade</p>
+                        <div class="progressBar"><div class="progress progress-speed" id="progress_speed"><span id="modal_speed"></span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="src/js/script.js"></script>
+    <script src="src/js/modal.js"></script>
 </body>
 </html>

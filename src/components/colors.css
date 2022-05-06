@@ -1,0 +1,157 @@
+:root{
+    --red-1              : #DB092C;
+    --red-2              : #A60620;
+    --yellow-1           : #f5da2d;
+    --yellow-2           : #a28c11;
+    --green-1-focus      : #41914d;
+    --green-1            : #4fae5d;
+    --green-2            : #002e2a;
+    --blue-1             : #28abfd;
+    --blue-2             : #176a9f;
+    --gray-1             : #e0e0e0;
+    --gray-2             : #707070;
+    --gray-3             : #222222;
+
+    --tips-all           : #DB092C;
+    --tips-all-hover     : #A60620;
+    --tips-grass         : #83c765;
+    --tips-grass-hover   : #5c9643;
+    --tips-fire          : #ec514a;
+    --tips-fire-hover    : #b33630;
+    --tips-water         : #4fa6f9;
+    --tips-water-hover   : #3274b1;
+    --tips-bug           : #b7c551;
+    --tips-bug-hover     : #8e993a;
+    --tips-normal        : #b3b2aa;
+    --tips-normal-hover  : #8b8a83;
+    --tips-poison        : #b97fc9;
+    --tips-poison-hover  : #8b5998;
+    --tips-electric      : #f3d55f;
+    --tips-electric-hover: #c6ad49;
+    --tips-ground        : #dcbf67;
+    --tips-ground-hover  : #c2a945;
+    --tips-fairy         : #fdb9e9;
+    --tips-fairy-hover   : #d28dbd;
+    --tips-fighting      : #d56723;
+    --tips-fighting-hover: #b6581e;
+    --tips-psychic       : #ea61a2;
+    --tips-psychic-hover : #c54f86;
+    --tips-rock          : #c0b176;
+    --tips-rock-hover    : #9d905d;
+    --tips-ghost         : #7774c2;
+    --tips-ghost-hover   : #5f5da9;
+    --tips-ice           : #88dffb;
+    --tips-ice-hover     : #66b6d1;
+    --tips-dragon        : #f16e57;
+    --tips-dragon-hover  : #c8533f;
+    --tips-dark          : #707070;
+    --tips-dark-hover    : #3e3d3d;
+    --tips-steel         : #9eb7b8;
+    --tips-steel-hover   : #798e8f;
+    --tips-flying        : #89aae3;
+    --tips-flying-hover  : #6a91d3;
+    --font-title         :'Comfortaa', cursive;
+    --font-text          :'Plus Jakarta Sans', sans-serif;
+}
+
+/* bg */
+.bg-red-1{background-color: var(--red-1);}
+.bg-red-2{background-color: var(--red-2);}
+.bg-yellow-1{background-color: var(--yellow-1);}
+.bg-yellow-2{background-color: var(--yellow-2);}
+.bg-green-1-focus{background-color: var(--green-1-focus);}
+.bg-green-1{background-color: var(--green-1);}
+.bg-green-2{background-color: var(--green-2);}
+.bg-blue-1{background-color: var(--blue-1);}
+.bg-blue-2{background-color: var(--blue-2);}
+.bg-gray-1{background-color: var(--gray-1);}
+.bg-gray-2{background-color: var(--gray-2);}
+.bg-gray-3{background-color: var(--gray-3);}
+
+.bg-tips-all{background-color: var(--tips-all);}
+
+.bg-grass    { background-color: var(--tips-grass)      ;   }
+.bg-fire     { background-color: var(--tips-fire)       ;   }
+.bg-water    { background-color: var(--tips-water)      ;   }
+.bg-bug      { background-color: var(--tips-bug)        ;   }
+.bg-normal   { background-color: var(--tips-normal)     ;   }
+.bg-poison   { background-color: var(--tips-poison)     ;   }
+.bg-electric { background-color: var(--tips-electric)   ;   }
+.bg-ground   { background-color: var(--tips-ground)     ;   }
+.bg-fairy    { background-color: var(--tips-fairy)      ;   }
+.bg-fighting { background-color: var(--tips-fighting)   ;   }
+.bg-psychic  { background-color: var(--tips-psychic)    ;   }
+.bg-rock     { background-color: var(--tips-rock)       ;   }
+.bg-ghost    { background-color: var(--tips-ghost)      ;   }
+.bg-ice      { background-color: var(--tips-ice)        ;   }
+.bg-dragon   { background-color: var(--tips-dragon)     ;   }
+.bg-dark     { background-color: var(--tips-dark)       ;   }
+.bg-steel    { background-color: var(--tips-steel)      ;   }
+.bg-flying   { background-color: var(--tips-flying)     ;   }
+
+
+.border-grass    { border-color: var(--tips-grass)      ;   }
+.border-fire     { border-color: var(--tips-fire)       ;   }
+.border-water    { border-color: var(--tips-water)      ;   }
+.border-bug      { border-color: var(--tips-bug)        ;   }
+.border-normal   { border-color: var(--tips-normal)     ;   }
+.border-poison   { border-color: var(--tips-poison)     ;   }
+.border-electric { border-color: var(--tips-electric)   ;   }
+.border-ground   { border-color: var(--tips-ground)     ;   }
+.border-fairy    { border-color: var(--tips-fairy)      ;   }
+.border-fighting { border-color: var(--tips-fighting)   ;   }
+.border-psychic  { border-color: var(--tips-psychic)    ;   }
+.border-rock     { border-color: var(--tips-rock)       ;   }
+.border-ghost    { border-color: var(--tips-ghost)      ;   }
+.border-ice      { border-color: var(--tips-ice)        ;   }
+.border-dragon   { border-color: var(--tips-dragon)     ;   }
+.border-dark     { border-color: var(--tips-dark)       ;   }
+.border-steel    { border-color: var(--tips-steel)      ;   }
+.border-flying   { border-color: var(--tips-flying)     ;   }
+
+
+/* text */
+.t-white{color: white;}
+.t-black{color: black;}
+
+/* tips */
+.tips-all     { background-color: var(--tips-all);     }
+.tips-grass   { background-color: var(--tips-grass);   }
+.tips-fire    { background-color: var(--tips-fire);    }
+.tips-water   { background-color: var(--tips-water);   }
+.tips-normal  { background-color: var(--tips-normal);  }
+.tips-bug      { background-color: var(--tips-bug)      }
+.tips-poison  { background-color: var(--tips-poison);  }
+.tips-electric{ background-color: var(--tips-electric);}
+.tips-ground  { background-color: var(--tips-ground);  }
+.tips-fairy   { background-color: var(--tips-fairy);   }
+.tips-fighting{ background-color: var(--tips-fighting);}
+.tips-psychic { background-color: var(--tips-psychic); }
+.tips-rock    { background-color: var(--tips-rock);    }
+.tips-ghost   { background-color: var(--tips-ghost);   }
+.tips-ice     { background-color: var(--tips-ice);     }
+.tips-dragon  { background-color: var(--tips-dragon);  }
+.tips-dark    { background-color: var(--tips-dark);    }
+.tips-steel   { background-color: var(--tips-steel);   }
+.tips-flying   { background-color: var(--tips-flying);   }
+
+
+.tips-all:hover      { background-color: var(--tips-all-hover); }
+.tips-grass:hover    { background-color: var(--tips-grass-hover); }
+.tips-fire:hover     { background-color: var(--tips-fire-hover); }
+.tips-water:hover    { background-color: var(--tips-water-hover); }
+.tips-bug:hover      { background-color: var(--tips-bug-hover) }
+.tips-normal:hover   { background-color: var(--tips-normal-hover); }
+.tips-poison:hover   { background-color: var(--tips-poison-hover); }
+.tips-electric:hover { background-color: var(--tips-electric-hover); }
+.tips-ground:hover   { background-color: var(--tips-ground-hover); }
+.tips-fairy:hover    { background-color: var(--tips-fairy-hover); }
+.tips-fighting:hover { background-color: var(--tips-fighting-hover); }
+.tips-psychic:hover  { background-color: var(--tips-psychic-hover); }
+.tips-rock:hover     { background-color: var(--tips-rock-hover); }
+.tips-ghost:hover    { background-color: var(--tips-ghost-hover); }
+.tips-ice:hover      { background-color: var(--tips-ice-hover); }
+.tips-dragon:hover   { background-color: var(--tips-dragon-hover); }
+.tips-dark:hover     { background-color: var(--tips-dark-hover); }
+.tips-steel:hover    { background-color: var(--tips-steel-hover); }
+.tips-flying:hover    { background-color: var(--tips-flying-hover); }
