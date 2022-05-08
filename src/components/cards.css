@@ -1,3 +1,5 @@
+
+
 .card{
     display: flex;
     flex-direction: column;
@@ -64,6 +66,7 @@
         content: '';
         width: 100px;
         height: 100px;
+        /* background-color: var(--gray-2); */
         top: -20%;
         left: -20%;
         position: absolute;
@@ -82,15 +85,21 @@
 }
 
 .card img {
+    /* width: 150px;
+    height: 150px; */
     object-fit: contain;    
 }
 
 .card .icon {
     width: 30px;
     opacity: 0.4;
+    transform: scale(0.9); 
+    transition: 0.5s;
+    /* fill: transparent; */
+    stroke: none;
 }
 
-.card .icon-active{opacity: 1;}
+.card .icon-active{opacity: 1; transform: scale(1.1); transition: 0.5s;}
 
 .card-info {
     display: flex;

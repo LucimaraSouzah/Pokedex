@@ -25,10 +25,10 @@
         <nav>
             <a href="index.html" class="home">
                 <figure>
-                    <img src="src/images/house.svg" alt="Ícone da página inicial" title="Página inicial"/>
+                    <img src="src/images/house2.svg" alt="Ícone da página inicial" title="Página inicial"/>
                 </figure>
             </a>
-            <a href="#" onclick="RenderByObjects(Pokemon.FavoritesObj)" class="favorites">
+            <a href="#" onclick="Render.Favorites()" class="favorites">
                 <figure>
                     <img src="src/images/heart2.svg" alt="Ícone para ir para os favoritos" title="Favoritos"/>
                 </figure> 
@@ -38,41 +38,39 @@
     <main>
         <div class="search">
             <img width="50px" src="src/images/plus.svg" alt="Imagem plus">
-            <input onkeyup="PokemonSearch(this.value)"type="text" id="search-poke">
+            <input onkeyup="Render.Search(this.value)"type="text" id="search-poke">
             <div class="circle-search"></div>
         </div>
             <ul class="list-tips">
-                <a href="index.html"><li class="tips tips-all" >Todos</li></a>
-                <li onclick="RenderByCategory('grass')" class="tips tips-grass" >selva</li>
-                <li onclick="RenderByCategory('fire')" class="tips tips-fire" >fogo</li>
-                <li onclick="RenderByCategory('water')" class="tips tips-water" >água</li>
-                <li onclick="RenderByCategory('bug')" class="tips tips-bug" >inseto</li>
-                <li onclick="RenderByCategory('normal')" class="tips tips-normal" >normal</li>
-                <li onclick="RenderByCategory('poison')" class="tips tips-poison" >venenoso</li>
-                <li onclick="RenderByCategory('electric')"class="tips tips-electric" >elétrico</li>
-                <li onclick="RenderByCategory('ground')" class="tips tips-ground" >terra</li>
-                <li onclick="RenderByCategory('fairy')" class="tips tips-fairy" >mágico</li>
-                <li onclick="RenderByCategory('fighting')"class="tips tips-fighting" >lutador</li>
-                <li onclick="RenderByCategory('psychic')" class="tips tips-psychic" >psiquico</li>
-                <li onclick="RenderByCategory('rock')" class="tips tips-rock" >pedra</li>
-                <li onclick="RenderByCategory('ghost')" class="tips tips-ghost" >fantasma</li>
-                <li onclick="RenderByCategory('ice')" class="tips tips-ice" >gelo</li>
-                <li onclick="RenderByCategory('dragon')" class="tips tips-dragon" >dragão</li>
-                <li onclick="RenderByCategory('dark')" class="tips tips-dark" >obscuro</li>
-                <li onclick="RenderByCategory('steel')" class="tips tips-steel" >ferro</li>
-                <li onclick="RenderByCategory('flying')" class="tips tips-flying">voador</li>
+                <li onclick="Render.Category('')"   class="tips tips-all" >Todos</li>
+                <li onclick="Render.Category('grass')"   class="tips tips-grass" >selva</li>
+                <li onclick="Render.Category('fire')"    class="tips tips-fire" >fogo</li>
+                <li onclick="Render.Category('water')"   class="tips tips-water" >água</li>
+                <li onclick="Render.Category('bug')"     class="tips tips-bug" >inseto</li>
+                <li onclick="Render.Category('normal')"  class="tips tips-normal" >normal</li>
+                <li onclick="Render.Category('poison')"  class="tips tips-poison" >venenoso</li>
+                <li onclick="Render.Category('electric')"class="tips tips-electric" >elétrico</li>
+                <li onclick="Render.Category('ground')"  class="tips tips-ground" >terra</li>
+                <li onclick="Render.Category('fairy')"   class="tips tips-fairy" >mágico</li>
+                <li onclick="Render.Category('fighting')"class="tips tips-fighting" >lutador</li>
+                <li onclick="Render.Category('psychic')" class="tips tips-psychic" >psiquico</li>
+                <li onclick="Render.Category('rock')"    class="tips tips-rock" >pedra</li>
+                <li onclick="Render.Category('ghost')"   class="tips tips-ghost" >fantasma</li>
+                <li onclick="Render.Category('ice')"     class="tips tips-ice" >gelo</li>
+                <li onclick="Render.Category('dragon')"  class="tips tips-dragon" >dragão</li>
+                <li onclick="Render.Category('dark')"    class="tips tips-dark" >obscuro</li>
+                <li onclick="Render.Category('steel')"   class="tips tips-steel" >ferro</li>
+                <li onclick="Render.Category('flying')"   class="tips tips-flying">voador</li>
             </ul>
         <section id="cards">
         </section>
     </main>
-    <footer>
-    </footer>
 
     <div class="modal modal-effects modal-off" id="div_modal">
         <div class="modal-in modal-body " style="overflow-y: scroll;">
             <div style="text-align: center;">
                 <div class="ball" id="ball"></div>
-                <img style="position: relative; z-index: 2" id="modal_img" height="200px" src="">
+                <img style="position: relative; z-index: 2" id="modal_img" height="200px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
             </div>
             <div id="modalConteudo">
                 <span id="modal_name"></span>
@@ -82,7 +80,6 @@
                 <p>Peso <span id="modal_weight"></span></p>
                 <p>Altura <span id="modal_height"></span></p>
             </div>
-
             <div id="modalStatus">
                 <h4>Status</h4>
                 <div class="modalStatusBody" >
@@ -114,6 +111,7 @@
             </div>
         </div>
     </div>
+
     <script src="src/js/script.js"></script>
     <script src="src/js/modal.js"></script>
 </body>

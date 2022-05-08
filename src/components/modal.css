@@ -160,6 +160,7 @@
 }
 
 .progress span{color: white;}
+
 .progress-hp{background-color: var(--red-1);}
 .progress-atk{background-color: var(--blue-1);}
 .progress-def{background-color: var(--green-1);}

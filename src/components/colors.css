@@ -88,7 +88,8 @@
 .bg-dark     { background-color: var(--tips-dark)       ;   }
 .bg-steel    { background-color: var(--tips-steel)      ;   }
 .bg-flying   { background-color: var(--tips-flying)     ;   }
-
+.bg-title    { background-color: var(--font-title)      ;   }
+.bg-text     { background-color: var(--font-text)       ;   }
 
 .border-grass    { border-color: var(--tips-grass)      ;   }
 .border-fire     { border-color: var(--tips-fire)       ;   }
@@ -108,7 +109,8 @@
 .border-dark     { border-color: var(--tips-dark)       ;   }
 .border-steel    { border-color: var(--tips-steel)      ;   }
 .border-flying   { border-color: var(--tips-flying)     ;   }
-
+.border-title    { border-color: var(--font-title)      ;   }
+.border-text     { border-color: var(--font-text)       ;   }
 
 /* text */
 .t-white{color: white;}
